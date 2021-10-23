@@ -55,7 +55,7 @@ class RaidBot:
 
                         else:
                             log_info("Request denied. {} isn't in admin list.".format(from_id))
-                            self.vk.messages.send(peer_id=peer_id, message="No access. Sosi xyi nishiy nn.", random_id=get_random_id())
+                            self.vk.messages.send(peer_id=peer_id, message="❌Нет прав, нищий нн.", random_id=get_random_id())
 
             if working:
                 try:
@@ -94,7 +94,7 @@ class RaidBot:
                         self.start_raid(peer_id=peer_id, controllers=config.controllers)
                     else:
                         log_info("Request denied. {} isn't in admin list.")
-                        self.vk.messages.send(peer_id=peer_id, message="No access. Sosi xyi nishiy nn.", random_id=get_random_id())
+                        self.vk.messages.send(peer_id=peer_id, message="❌Нет прав, нищий нн.", random_id=get_random_id())
 
 
 if __name__ == "__main__":
