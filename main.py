@@ -44,7 +44,7 @@ class RaidBot:
                 message_text = event.object['message']['text']
                 if event.type == VkBotEventType.MESSAGE_NEW:
                     parsed_text = utils.parse_message(message_text, self.community_info)
-                    if parsed_text == "stopRaid":
+                    if parsed_text == "stopRaid" or "raid stop" or "стоп рейд":
                         log_info('{} requested raid stop'.format(from_id))
                         admin_check_answer = check_admin(from_id)
                         if admin_check_answer:
