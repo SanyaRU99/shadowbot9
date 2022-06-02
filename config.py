@@ -2,7 +2,7 @@ import os
 import utils
 import ast
 
-ver_msg = 'Shadow Bot by YBA community'
+ver_msg = 'Shadow Bot by YBAR community'
 
 isHerokuInstance = True
 message_delay = 0.3
